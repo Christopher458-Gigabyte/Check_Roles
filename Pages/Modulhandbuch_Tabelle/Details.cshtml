@@ -1,0 +1,43 @@
+﻿@page
+@model Check_Roles.Pages.Modulhandbuch_Tabelle.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Modulhandbuch</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Modulhandbuch.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Modulhandbuch.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Modulhandbuch.FachbereichId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Modulhandbuch.FachbereichId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Modulhandbuch.StudiengangId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Modulhandbuch.StudiengangId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Modulhandbuch.Prüfungsordnung)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Modulhandbuch.Prüfungsordnung)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Modulhandbuch.ModulhandbuchId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

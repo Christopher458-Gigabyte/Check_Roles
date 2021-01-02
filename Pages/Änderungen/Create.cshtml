@@ -1,0 +1,74 @@
+﻿@page
+@model Check_Roles.Pages.Änderung.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Änderung</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Änderung.AdminId" class="control-label"></label>
+                <input asp-for="Änderung.AdminId" class="form-control" />
+                <span asp-validation-for="Änderung.AdminId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Änderung.DozentId" class="control-label"></label>
+                <input asp-for="Änderung.DozentId" class="form-control" />
+                <span asp-validation-for="Änderung.DozentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Änderung.ModulId" class="control-label"></label>
+                <input asp-for="Änderung.ModulId" class="form-control" />
+                <span asp-validation-for="Änderung.ModulId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Änderung.AlterEintrag" class="control-label"></label>
+                <input asp-for="Änderung.AlterEintrag" class="form-control" />
+                <span asp-validation-for="Änderung.AlterEintrag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Änderung.NeuerEintrag" class="control-label"></label>
+                <input asp-for="Änderung.NeuerEintrag" class="form-control" />
+                <span asp-validation-for="Änderung.NeuerEintrag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Änderung.Datum" class="control-label"></label>
+                <input asp-for="Änderung.Datum" class="form-control" />
+                <span asp-validation-for="Änderung.Datum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Änderung.ModulhandbuchId" class="control-label"></label>
+                <input asp-for="Änderung.ModulhandbuchId" class="form-control" />
+                <span asp-validation-for="Änderung.ModulhandbuchId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Änderung.Fachbereich" class="control-label"></label>
+                <input asp-for="Änderung.Fachbereich" class="form-control" />
+                <span asp-validation-for="Änderung.Fachbereich" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Änderung.Status" class="control-label"></label>
+                <input asp-for="Änderung.Status" class="form-control" />
+                <span asp-validation-for="Änderung.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

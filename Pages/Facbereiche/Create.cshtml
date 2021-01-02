@@ -1,0 +1,44 @@
+﻿@page
+@model Check_Roles.Pages.Facbereiche.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Fachbereich</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Fachbereich.Name" class="control-label"></label>
+                <input asp-for="Fachbereich.Name" class="form-control" />
+                <span asp-validation-for="Fachbereich.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fachbereich.AdminId" class="control-label"></label>
+                <input asp-for="Fachbereich.AdminId" class="form-control" />
+                <span asp-validation-for="Fachbereich.AdminId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fachbereich.Studiengänge" class="control-label"></label>
+                <input asp-for="Fachbereich.Studiengänge" class="form-control" />
+                <span asp-validation-for="Fachbereich.Studiengänge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

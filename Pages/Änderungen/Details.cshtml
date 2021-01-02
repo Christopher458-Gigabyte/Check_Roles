@@ -1,0 +1,73 @@
+﻿@page
+@model Check_Roles.Pages.Änderung.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Änderung</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Änderung.AdminId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Änderung.AdminId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Änderung.DozentId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Änderung.DozentId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Änderung.ModulId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Änderung.ModulId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Änderung.AlterEintrag)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Änderung.AlterEintrag)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Änderung.NeuerEintrag)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Änderung.NeuerEintrag)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Änderung.Datum)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Änderung.Datum)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Änderung.ModulhandbuchId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Änderung.ModulhandbuchId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Änderung.Fachbereich)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Änderung.Fachbereich)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Änderung.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Änderung.Status)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Änderung.ÄnderungId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
